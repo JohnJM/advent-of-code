@@ -16,12 +16,10 @@ where
 fn count_calories() -> Vec<u32> {
     let mut calories = 0;
     let mut calories_list: Vec<u32> = Vec::new();
-    let mut index = 0;
     for num in input2::INPUT.iter() {
         match num {
             &"" => {
                 calories_list.push(calories);
-                index += 1;
                 calories = 0;
             }
             _ => {
